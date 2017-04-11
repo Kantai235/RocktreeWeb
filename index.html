@@ -12,6 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="assets/css/csshake.min.css" />
+    <link rel="stylesheet" href="assets/css/image-boom.css" />
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
@@ -22,7 +24,7 @@
     <div id="wrapper">
         <!-- Header -->
         <header id="header">
-            <img src="images/ARR_FFXIV_Logo.png" alt="ARR_FFXIV_Logo" width="100%"/>
+            <img class="breath_light" src="images/ARR_FFXIV_Logo.png" alt="ARR_FFXIV_Logo" width="100%"/>
             <div class="content">
                 <div class="inner">
                     <h1>石树之森</h1>
@@ -33,7 +35,7 @@
                 <ul>
                     <li><a href="#intro">关于石树</a></li>
                     <li><a href="#work">石树大冒险</a></li>
-                    <li><a href="#about">讨论帖</a></li>
+                    <li><a href="#disqus">讨论帖</a></li>
                     <!--<li><a href="#contact">Contact</a></li>-->
                     <!--<li><a href="#elements">Elements</a></li>-->
                 </ul>
@@ -49,7 +51,7 @@
                 <div class="text-align-center">
                     <img class="logo" src="images/logo.jpg" alt="" />
                 </div>
-                <h4 class="text-align-center">QQ号:371597834</h4>
+                <h4 class="text-align-center">QQ号:我忘了</h4>
             </article>
 
             <!-- Work -->
@@ -65,8 +67,8 @@
                 <span class="image main"><img src="images/work04.png" alt="Work Image - 04" /></span>
             </article>
 
-            <!-- About -->
-            <article id="about">
+            <!-- Disqus -->
+            <article id="disqus">
                 <h2 class="major">讨论帖</h2>
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div id="disqus_thread"></div>
@@ -372,13 +374,32 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
     <div id="bg"></div>
 
     <!-- 画面上的人物 (Kantai) -->
-    <div id="kantai-man"></div>
+    <div class="shake shake.vertical" id="kantai-man"></div>
 
     <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.gtimg.com/cdnjs/libs/jquery/1.8.0/jquery-1.8.0.min.js"></script>
     <script src="assets/js/skel.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/image-boom.js"></script>
+    <!--<script>
+        // 視窗載入三秒後，讓 FFXIV Logo 爆炸
+        $(window).load(function() {
+            setTimeout(function(){
+                var bom = boom();
+                bom.boom($('img'),{
+                    'scaleLevel' : 6,
+                    'blurLevel': 18,
+                    'boomLevel': 8,
+                    'boomTime': 2000
+                });
+                setTimeout(function(){
+                    
+                }, 2000);
+            }, 3000);
+        });
+    </script>-->
+
 </div>
 
 </body>
