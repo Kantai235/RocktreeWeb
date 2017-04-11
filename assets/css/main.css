@@ -1327,7 +1327,7 @@ body.is-loading #bg:before {
     display: none;
 }
 
-#header .logo {
+.logo {
     width: 5.5rem;
     height: 5.5rem;
     line-height: 5.5rem;
@@ -1335,7 +1335,7 @@ body.is-loading #bg:before {
     border-radius: 100%;
 }
 
-#header .logo .icon:before {
+.logo .icon:before {
     font-size: 2rem;
 }
 
@@ -1472,12 +1472,12 @@ body.is-loading #header .content .inner {
         top: calc(-2rem - 1px);
         height: calc(2rem + 1px);
     }
-    #header .logo {
+    .logo {
         width: 4.75rem;
         height: 4.75rem;
         line-height: 4.75rem;
     }
-    #header .logo .icon:before {
+    .logo .icon:before {
         font-size: 1.75rem;
     }
     #header .content .inner {
